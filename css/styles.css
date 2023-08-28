@@ -1,0 +1,263 @@
+header {
+	/* display: flex;
+	flex-direction: column;
+	align-items: center; */
+	width: 1918px;
+	height: 136px;
+	/* position: absolute; */
+	/* Имеет ли смысл указывать абсолютную позицию при этом не указывая top, right и т.д ? и то если хоть что-то выставить все ломается */
+	/* Тут я сделал строго по пикселям, но вообще лучше делать что-то типа width: 100%, если вдруг у человека разрешение эрана более
+	1918px?; */
+}
+
+body {
+	width: 1918px;
+	background: #fff;
+}
+
+.container {
+	margin: auto;
+	width: 1296px;
+}
+
+.header-control {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 52px;
+	width: 1918px;
+	background: #1E293B;
+}
+
+.control-buttons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 26px;
+
+}
+
+.control-buttons__button-entry {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 36px;
+	gap: 8px;
+	padding: 8px 0px;
+	font-family: Inter;
+	font-style: normal;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #fff;
+	border-radius: 4px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.control-buttons__button-new {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 179px;
+	height: 32px;
+	gap: 4px;
+	padding: 6px 12px;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	color: #fff;
+	border-radius: 4px;
+	border: none;
+	background: #3B82F6;
+	cursor: pointer;
+}
+
+.header-navigation {
+	display: flex;
+	align-items: center;
+	width: 1918px;
+	height: 84px;
+	border-bottom: 1px solid #E2E8F0;
+}
+
+.navigation-options {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.navigation-options__text {
+	width: 284px;
+	height: 36px;
+	font-family: Inter;
+	font-size: 29px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 36px;
+	color: #1E293B;
+	cursor: default;
+}
+
+.navigation-options__button-all {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 152px;
+	height: 36px;
+	gap: 8px;
+	padding: 8px 12px;
+	margin: 0px 12px 0px 24px;
+	font-family: Inter;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 20px;
+	font-style: normal;
+	color: #3B82F6;
+	border: 1px solid #3B82F6;
+	border-radius: 4px;
+	background: none;
+	cursor: pointer;
+}
+
+.navigation-options__search-form {
+	display: flex;
+	align-items: center;
+}
+
+.navigation-options__search-form_input {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	width: 734px;
+	height: 36px;
+	gap: 12px;
+	font-family: Inter;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	font-style: normal;
+	border: 1px solid #CBD5E1;
+	border-radius: 4px 0px 0px 4px;
+	cursor: pointer;
+}
+
+.navigation-options__search-form_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 12px;
+	width: 91px;
+	height: 36px;
+	gap: 8px;
+	font-family: Inter;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	font-style: normal;
+	color: #fff;
+	border-radius: 0px 4px 4px 0px;
+	border: none;
+	background: #3B82F6;
+	cursor: pointer;
+}
+
+main {
+	width: 1918px;
+	height: auto;
+}
+
+.content {
+	margin-bottom: 48px;
+}
+
+.content__text {
+	display: flex;
+	justify-content: flex-start;
+	margin: 32px 0px 24px 0px;
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px;
+	cursor: default;
+}
+
+.cards-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	justify-content: flex-start;
+	gap: 24px;
+	margin-bottom: 32px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 306px;
+	height: 336px;
+	cursor: pointer;
+
+	/* margin: 0px 24px 32px 0px; */
+}
+
+.card img {
+	width: 306px;
+	height: 240px;
+	border-radius: 4px;
+}
+
+.card-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.card-image img {
+	display: block;
+	transition: transform 0.1s ease;
+}
+
+.card-image:hover img {
+	transform: scale(1.03);
+}
+
+
+
+.card h5 {
+	/* В фигме было указано что это h6, но и в этот же момент цена тоже была в h6, из-за этого красилась и цена в синий, так что так 
+	решил сделать */
+	padding-top: 8px;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	color: #3B82F6;
+}
+
+.card h6 {
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.card p {
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	color: #64748B;
+}
